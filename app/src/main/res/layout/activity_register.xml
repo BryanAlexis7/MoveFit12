@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <!-- Campo Rut -->
+    <EditText
+        android:id="@+id/et_rut"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Rut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        android:layout_marginTop="24dp"/>
+
+    <!-- Campo Nombre -->
+    <EditText
+        android:id="@+id/et_nombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        app:layout_constraintTop_toBottomOf="@id/et_rut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Campo Apellido Paterno -->
+    <EditText
+        android:id="@+id/et_apellidoPaterno"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Apellido Paterno"
+        app:layout_constraintTop_toBottomOf="@id/et_nombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Campo Apellido Materno -->
+    <EditText
+        android:id="@+id/et_apellidoMaterno"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Apellido Materno"
+        app:layout_constraintTop_toBottomOf="@id/et_apellidoPaterno"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Campo Edad -->
+    <EditText
+        android:id="@+id/et_edad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Edad"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/et_apellidoMaterno"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Campo Género -->
+    <EditText
+        android:id="@+id/et_genero"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Género"
+        app:layout_constraintTop_toBottomOf="@id/et_edad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Campo Teléfono -->
+    <EditText
+        android:id="@+id/et_telefono"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Teléfono"
+        android:inputType="phone"
+        app:layout_constraintTop_toBottomOf="@id/et_genero"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Campo Dirección -->
+    <EditText
+        android:id="@+id/et_direccion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Dirección"
+        app:layout_constraintTop_toBottomOf="@id/et_telefono"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Campo Correo -->
+    <EditText
+        android:id="@+id/et_correo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Correo Electrónico"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@id/et_direccion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Botón Registrar -->
+    <Button
+        android:id="@+id/btn_registrar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        app:layout_constraintTop_toBottomOf="@id/et_correo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_volver"
+        app:layout_constraintWidth_percent="0.4"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"/>
+
+    <!-- Botón Volver -->
+    <Button
+        android:id="@+id/btn_volver"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Volver"
+        app:layout_constraintTop_toBottomOf="@id/et_correo"
+        app:layout_constraintStart_toEndOf="@id/btn_registrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.4"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
